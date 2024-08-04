@@ -1,0 +1,143 @@
+.form {
+  height: 680px;
+  width: 680px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  row-gap: 20px;
+  margin-top: 20px;
+}
+
+.full-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-name,
+.last-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.first-name input,
+.last-name input {
+  width: 280px;
+  height: 28px;
+  border-radius: 5px;
+  border: 2px solid #e2f1e7;
+}
+
+.first-name input:focus,
+.last-name input:focus {
+  background-color: wheat;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.email input {
+  height: 28px;
+  border-radius: 5px;
+  border: 2px solid #e2f1e7;
+}
+.email input:focus {
+  background-color: wheat;
+}
+.type {
+  display: flex;
+  gap: 5px;
+}
+.type div {
+  display: flex;
+  width: 280px;
+  height: 30px;
+  border-radius: 5px;
+  border: 3px solid #e2f1e7;
+  align-items: center;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.text-area textarea {
+  height: 70px;
+  border: 2px solid #e2f1e7;
+}
+.text-area textarea:focus {
+  background-color: wheat;
+}
+.check {
+  display: flex;
+  gap: 10px;
+}
+.check input {
+  width: 18px;
+  height: 15px;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background-color: #0d7c69;
+  border: none;
+  border-radius: 10px;
+}
+.support,
+.generaly {
+  display: flex;
+  column-gap: 5px;
+}
+
+@media only screen and (max-width: 750px) {
+    .form {
+        height: 90%;
+        width: 90%;
+        background-color: #ffffff;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .form-fields {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        row-gap: 5px;
+        margin-top: 2px;
+      }
+      
+  .full-name {
+    display: flex;
+    flex-direction: column;
+  }
+  .type {
+    display: flex;
+    flex-direction: column;
+  }
+  .email input {
+    width: 280px;
+  }
+  .text-area textarea {
+    width: 280px;
+  }
+  button {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+  }
+}
